@@ -6788,7 +6788,7 @@ __metadata:
     rollup-plugin-strip-code: ^0.2.6
     size-limit: ^4.11.0
     source-map: ^0.7.3
-    structurajs: ^0.9.0
+    structurajs: ^0.10.0
     terser: ^5.6.1
     tslib: ^1.10.0
     tsx: ^3.12.2
@@ -26768,10 +26768,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"structurajs@npm:^0.9.0":
-  version: 0.9.0
-  resolution: "structurajs@npm:0.9.0"
-  checksum: 7657c846f8a271dfec97dd413b5935b49d6496c3df7c345ff08383a2e27b9e121fc935bdab52783578c84f423da42a13171e01b5e45fe30a15eb16ccf298bdca
+"structurajs@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "structurajs@npm:0.10.0"
+  checksum: 22223917c74888c152a5310d85ce7bca970d73675538b1d29c91643adf96681f86376a9b4eaabebf2852b4331a56ecb91812092cde65250dd7c7f7268386065c
   languageName: node
   linkType: hard
 
