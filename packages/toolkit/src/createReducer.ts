@@ -1,5 +1,5 @@
-import type { Draft } from './'
-import { produce as createNextState, isDraft, isDraftable } from 'structurajs'
+import type { Draft } from './exports'
+import { createNextState, isDraft, isDraftable } from './exports'
 import type { AnyAction, Action, Reducer } from 'redux'
 import type { ActionReducerMapBuilder } from './mapBuilders'
 import { executeReducerBuilderCallback } from './mapBuilders'
