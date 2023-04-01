@@ -1,4 +1,4 @@
-import { current, isDraft } from 'immer'
+import { current, isDraft } from '@reduxjs/toolkit'
 import { createSelector } from 'reselect'
 
 /**

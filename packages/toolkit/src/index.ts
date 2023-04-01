@@ -1,12 +1,22 @@
+import { enableStandardPatches, enableAutoFreeze } from 'structurajs'
+
+enableStandardPatches(true)
+enableAutoFreeze(true)
+
 export * from 'redux'
 export {
-  create as createNextState,
-  current,
-  // freeze,
-  original,
+  produce,
+  produce as createNextState,
+  produceWithPatches,
+  snapshot as current,
   isDraft,
-} from 'mutative'
-export type { Draft } from 'immer'
+  isDraftable,
+  applyPatches,
+  freeze,
+  original,
+} from 'structurajs'
+export type { UnFreeze as Draft, Patch } from 'structurajs'
+
 export { createSelector } from 'reselect'
 export type {
   Selector,

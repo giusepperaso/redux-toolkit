@@ -5,7 +5,7 @@ import type {
   QuerySubstateIdentifier,
   Subscribers,
 } from '../apiState'
-import { create } from 'mutative'
+import { produceWithPatches } from '@reduxjs/toolkit'
 import type { AnyAction } from '@reduxjs/toolkit'
 
 // Copied from https://github.com/feross/queue-microtask
@@ -124,10 +124,9 @@ export const buildBatchedActionsHandler: InternalHandlerBuilder<
             JSON.stringify(internalState.currentSubscriptions)
           )
           // Figure out a smaller diff between original and current
-          const [, patches] = create(
+          const [, patches] = produceWithPatches(
             previousSubscriptions,
-            () => newSubscriptions,
-            { enablePatches: true }
+            () => newSubscriptions
           )
 
           // Sync the store state for visibility

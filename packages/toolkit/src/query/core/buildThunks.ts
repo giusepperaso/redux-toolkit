@@ -23,7 +23,8 @@ import type {
 } from '../endpointDefinitions'
 import { isQueryDefinition } from '../endpointDefinitions'
 import { calculateProvidedBy } from '../endpointDefinitions'
-import type { AsyncThunkPayloadCreator, Draft } from '@reduxjs/toolkit'
+import type { AsyncThunkPayloadCreator } from '@reduxjs/toolkit'
+import type { Draft } from '@reduxjs/toolkit'
 import {
   isAllOf,
   isFulfilled,
@@ -31,8 +32,8 @@ import {
   isRejected,
   isRejectedWithValue,
 } from '@reduxjs/toolkit'
-import type { Patches, Patch } from 'mutative'
-import { isDraftable, create } from 'mutative'
+import type { Patch } from '@reduxjs/toolkit'
+import { isDraftable, produceWithPatches } from '@reduxjs/toolkit'
 import type {
   AnyAction,
   ThunkAction,
@@ -264,11 +265,10 @@ export function buildThunks<
       }
       if ('data' in currentState) {
         if (isDraftable(currentState.data)) {
-          const [, patches, inversePatches] = create(
+          const [, patches, inversePatches] = produceWithPatches(
             currentState.data,
-            updateRecipe,
-            { enablePatches: true }
-          ) as [unknown, Patches<true>, Patches<true>]
+            updateRecipe
+          )
           ret.patches.push(...patches)
           ret.inversePatches.push(...inversePatches)
         } else {

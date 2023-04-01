@@ -1,4 +1,4 @@
-import { create as createNextState, isDraft } from 'mutative'
+import { createNextState, isDraft } from '@reduxjs/toolkit'
 import type { EntityState, PreventAny } from './models'
 import type { PayloadAction } from '../createAction'
 import { isFSA } from '../createAction'

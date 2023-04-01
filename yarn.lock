@@ -6771,14 +6771,12 @@ __metadata:
     eslint-plugin-react: ^7.23.2
     eslint-plugin-react-hooks: ^4.2.0
     fs-extra: ^9.1.0
-    immer: ^9.0.16
     invariant: ^2.2.4
     jsdom: ^21.0.0
     json-stringify-safe: ^5.0.1
     magic-string: ^0.25.7
     merge-source-map: ^1.1.0
     msw: ^0.40.2
-    mutative: ^0.4.2
     node-fetch: ^2.6.1
     prettier: ^2.2.1
     query-string: ^7.0.1
@@ -6790,6 +6788,7 @@ __metadata:
     rollup-plugin-strip-code: ^0.2.6
     size-limit: ^4.11.0
     source-map: ^0.7.3
+    structurajs: ^0.9.0
     terser: ^5.6.1
     tslib: ^1.10.0
     tsx: ^3.12.2
@@ -20610,13 +20609,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"mutative@npm:^0.4.2":
-  version: 0.4.2
-  resolution: "mutative@npm:0.4.2"
-  checksum: fe5c579071bebbb32eb8da921fc4044bd1ca2ca399f998f49271d0bb35ff2c56eff0adcb66a2b398d62207f48ff6bc902bc9101278a30b8cb74ba2acce961a76
-  languageName: node
-  linkType: hard
-
 "mute-stream@npm:0.0.8":
   version: 0.0.8
   resolution: "mute-stream@npm:0.0.8"
@@ -26773,6 +26765,13 @@ fsevents@^1.2.7:
   dependencies:
     acorn: ^8.8.1
   checksum: ada9b60f322ce3e3fd167b65a186ab77a8c76b8f9074dcdbad4c1a810b46f21c9dca30d4d807e98af580cbe99bfbccd6d8176f69183a454ae2868d8ddd6d4f88
+  languageName: node
+  linkType: hard
+
+"structurajs@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "structurajs@npm:0.9.0"
+  checksum: 7657c846f8a271dfec97dd413b5935b49d6496c3df7c345ff08383a2e27b9e121fc935bdab52783578c84f423da42a13171e01b5e45fe30a15eb16ccf298bdca
   languageName: node
   linkType: hard
 

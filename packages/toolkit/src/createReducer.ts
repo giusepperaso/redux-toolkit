@@ -1,5 +1,5 @@
-import type { Draft } from 'immer'
-import { create as createNextState, isDraft, isDraftable } from 'mutative'
+import type { Draft } from './'
+import { produce as createNextState, isDraft, isDraftable } from 'structurajs'
 import type { AnyAction, Action, Reducer } from 'redux'
 import type { ActionReducerMapBuilder } from './mapBuilders'
 import { executeReducerBuilderCallback } from './mapBuilders'
