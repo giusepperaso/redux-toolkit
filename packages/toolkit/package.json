@@ -120,7 +120,7 @@
     "redux": "5.0.0-alpha.2",
     "redux-thunk": "3.0.0-alpha.1",
     "reselect": "^4.1.7",
-    "structurajs": "^0.10.0"
+    "structurajs": "^0.11.0"
   },
   "peerDependencies": {
     "react": "^16.9.0 || ^17.0.0 || ^18",
